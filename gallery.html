@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Golden Grand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Navbar-->
+     <header class="navbar">
+      <div class="logo"><img src="slideshowimage/Black and Gold Modern Luxury Jewelry Shop Logo.png"></div>
+      <nav class="nav-links">
+          <ul>
+              <li><a href="#"><a href="index.html">Home</a> </a> </li>
+              <li><a href="#"><a href="about.html">About</a> </a> </li>
+              <li><a href="#"><a href="Accomodation.html">Accommodation</a> </a> </li>
+              <li><a href="#"><a href="dining.html">Dining</a> </a> </li>
+              <li><a href="#"><a href="events.html">Weddings</a> </a> </li>
+              <li><a href="#"><a href="gallery.html">Gallery</a> </a> </li>
+          </ul> 
+      </nav>
+      <a href="#" ><a href="book.html" class="booknow-btn"> Book Now</a></a>
+  </header>
+
+<div class="full-img" id="fullimgBox">
+  <img src="slideshowimage/1.jpg" id="fullImg">
+  <span onclick="closeFullImg()">x</span>
+</div>
+  
+  <div class="img-gallery">
+    <img src="slideshowimage/1.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/11.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/room.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/wedding.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/skr2.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/sr4.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/back.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/bar4.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/wp.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/ss3.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/cafe2.jpeg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/d3.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/beach.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/2.jpeg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/bar1.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/cafe1.jpeg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/d1.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/d8.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/ex2.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/hotel_overview.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/photo5.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/sr3.jpeg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/ss1.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/wed1.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/photo2.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/sks2.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/cafe4.jpg" onclick="openFullImg(this.src)">
+    <img src="slideshowimage/photo3.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <script>
+    var fullimgBox = document.getElementById("fullimgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+      fullimgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+
+    function closeFullImg(){
+      fullimgBox.style.display = "none";
+    }
+
+  </script>
+
+
+<!--Footer-->
+<footer>
+  <div class="f-content">
+      <p>The Golden Grand Hotel, Colombo
+          No. 64, Lotus Road, Colombo 01, Sri Lanka</p>
+      <p><a href="mailto:chathunimesha389@gmail.com">chathunimesha389@gmail.com</a> </p>
+      <p><a href="tel:+112345678">+112345678</a> </p>
+      <p>&copy; 2024 Golden Grand Hotel. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
